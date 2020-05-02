@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Amazing Calculator
+        </h1>
+    </header>
+    <main>
+     
+    <section id="calculator">
+
+        <input type="text" id="screen" class="input" readonly>
+        <button class="btn" id="multiply" onclick="insert('*')">*</button>
+        <button class="btn" id="divide" onclick="insert('/')">/</button>
+        <button class="btn" id="substract" onclick="insert('-')">-</button>
+        <button class="btn" id="add" onclick="insert('+')">+</button>
+        <button class="btn" id="dot" onclick="insert('.')">.</button>
+        <button class="btn" id="nine" onclick="insert(9)">9</button>
+        <button class="btn" id="eight" onclick="insert(8)">8</button>
+        <button class="btn" id="seven" onclick="insert(7)">7</button>
+        <button class="btn" id="six" onclick="insert(6)">6</button>
+        <button class="btn" id="five" onclick="insert(5)">5</button>
+        <button class="btn" id="four" onclick="insert(4)">4</button>
+        <button class="btn" id="three" onclick="insert(3)">3</button>
+        <button class="btn" id="two" onclick="insert(2)">2</button>
+        <button class="btn" id="one" onclick="insert(1)">1</button>
+        <button class="btn" id="zero" onclick="insert(0)">0</button>
+        <button class="btn" id="equal" onclick="calculate()">=</button>
+        <button class="btn" id="clear" onclick="clear()">Clear</button>
+
+    </section>
+       
+</main>
+    <script src="assets/main.js"></script>
+</body>
+</html>

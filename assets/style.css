@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+
+body{
+    margin: 5rem;
+    padding: 0;
+}
+
+#calculator{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, .5fr);
+    grid-template-rows: repeat(6, .5fr);
+    grid-template-areas: "screen     screen   screen     screen"
+                        "multiply   divide  substract add"
+                        "dot        nine    eight     seven"
+                        "six        five    four      three"
+                        "two        one     zero      equal"
+                        "clear      clear   clear     clear";
+}
+
+.btn{
+    border: 3px solid red;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    margin: 3em;
+}
+
+#screen{
+    grid-area: screen;
+    background-color: yellow;
+    height: 5em;
+}
+
+#clear{
+    grid-area: clear;
+    width: auto;
+}
+
+#equal{
+    grid-area: equal;
+    background-color: green;
+}
+
+#zero{
+    grid-area: zero;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+
+}
+
+#three{
+    grid-area: three;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
+}
+
+#multiply{
+ grid-area: multiply;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#substract{
+    grid-area: substract;
+}
+
+#add{
+    grid-area: add;
+}
