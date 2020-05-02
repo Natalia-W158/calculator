@@ -6,10 +6,8 @@ function insert(x) {
 
 function calculate(){
     screen.value = eval(screen.value);
-
-
 }
 
-function clear() {
-    screen.value = "";
+function goodbye() {
+    screen.value = " ";
 }
