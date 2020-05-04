@@ -1,17 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monofett&display=swap');
 
 
 body{
-    margin: 5rem;
-    padding: 0;
+    margin: 0;
+    padding: .8em;
+    font-family: 'Monofett', cursive;
+    background-color: black;
+
 }
+h1{
+    text-align: center;
+    color: white;
+    letter-spacing: .5em;
+
+}
+
 
 #calculator{
     display: grid;
     box-sizing: border-box;
     grid-template-columns: repeat(4, .5fr);
-    grid-template-rows: repeat(6, .5fr);
-    grid-template-areas: "screen     screen   screen     screen"
+    grid-template-rows: repeat(7, .5fr);
+    grid-template-areas: "header     header   header     header"
+                        "screen     screen   screen     screen"
                         "multiply   divide  substract add"
                         "dot        nine    eight     seven"
                         "six        five    four      three"
@@ -19,17 +30,38 @@ body{
                         "clear      clear   clear     clear";
 }
 
+
 .btn{
-    border: 3px solid red;
-    font-family: 'Righteous', cursive;
-    font-size: 1em;
-    margin: 3em;
+    border: none;
+    font-size: 2em;
+    margin: 0 .5em;
+    height: 3em;
+    width: 6em;
+    outline: none;
+    border-radius: 3px;
+    background-color: black;
+    color: darkgray;
+}
+
+.btn:hover{
+    background-color: #ff073a;
+    outline: none;
+
+}
+
+#header{
+    grid-area: header;
+    font-size: 3em;
 }
 
 #screen{
     grid-area: screen;
-    background-color: yellow;
-    height: 5em;
+    width: 95%;
+    justify-self: center;
+    height: 1em;
+    font-size: 3em;
+    outline: none;
+    
 }
 
 #clear{
@@ -39,7 +71,7 @@ body{
 
 #equal{
     grid-area: equal;
-    background-color: green;
+    background-color: midnightblue;
 }
 
 #zero{
